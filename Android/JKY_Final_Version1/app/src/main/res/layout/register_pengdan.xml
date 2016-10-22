@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    android:background="@drawable/p_login_bg">
+
+    <!--  <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:onClick="fanhui"
+        android:src="@drawable/abs__ic_ab_back_holo_light" />-->
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_touxiang"
+            android:layout_width="99dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/touxiang" />
+
+
+    </RelativeLayout>
+
+
+    <!--   <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >-->
+
+    <!-- <TextView
+         android:id="@+id/textView1"
+         android:layout_width="80dp"
+         android:layout_height="20dp"
+         android:gravity="right"
+         android:text=" 用户名：" /> -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.21"
+            android:drawableLeft="@drawable/login_icn_account"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:hint="用户名"
+
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <!--  </LinearLayout> -->
+
+
+    <!--   <TextView
+         android:id="@+id/textView2"
+         android:layout_width="80dp"
+         android:layout_height="20dp"
+         android:gravity="right"
+         android:text="  密码：" />-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <EditText
+            android:id="@+id/editText_pwd"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_icn_password"
+            android:ems="10"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <!--   <TextView
+             android:id="@+id/textView1"
+             android:layout_width="80dp"
+             android:layout_height="20dp"
+             android:gravity="right"
+             android:text="确认密码：" />-->
+
+        <EditText
+            android:id="@+id/editText_repwd"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_icn_identify"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="确认密码"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPassword"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!--  <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="邮箱地址：" />-->
+
+        <EditText
+            android:id="@+id/editText_mail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_icn_mail"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="邮箱"
+            android:layout_marginLeft="30dp"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- <TextView
+            android:id="@+id/textView_birthday"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:text="  生日：" /> -->
+
+        <EditText
+            android:id="@+id/editText_birthday"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/login_icn_mobile"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:hint=" 生日：月/日/年"
+            android:inputType="date"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light">
+        <!-- <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:gravity="ight"
+            android:text="  性别：" /> -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginLeft="70dp"
+
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_dark"
+                android:text="女" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textColor="@android:color/background_dark"
+            android:text="我已阅读并同意注册条款" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/register_button"
+            android:onClick="insert"
+            android:text="提交注册"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="130dp"
+            android:gravity="center_vertical"
+            android:onClick="continueLogin"
+            android:text="继续登录" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
